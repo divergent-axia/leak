@@ -1,0 +1,30 @@
+body {
+    width: 900px;
+    margin: 20px auto;
+}
+
+strong {
+    font-style: italic;
+}
+
+a {
+    color: royalblue;
+}
+
+h2 {
+    margin-bottom: 0em;
+}
+
+ul {
+    margin-top: 0.5em;
+}
+
+.small {
+    opacity: 0.5;
+    font-size: 0.6em;
+}
+
+li {
+    margin-left: -1.5em;
+    list-style: none;
+}

@@ -3,6 +3,10 @@ body {
     margin: 20px auto;
 }
 
+nav > a:not(:hover) {
+    text-decoration: none;
+}
+
 strong {
     font-style: italic;
 }

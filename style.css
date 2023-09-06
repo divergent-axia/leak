@@ -1,7 +1,7 @@
 body {
     margin: auto;
     padding: 0 2em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -26,17 +26,18 @@ h2 {
     margin-bottom: 0em;
 }
 
-ul {
-    margin-top: 0.5em;
+.small {
+    opacity: 0.4;
+    font-size: 0.8em;
 }
 
-.small {
-    opacity: 0.5;
-    font-size: 0.6em;
+ul {
+    margin-top: 0.5em;
 }
 
 li {
     margin-left: -1.5em;
     line-height: 1.8em;
     list-style: none;
+    word-break: break-all;
 }

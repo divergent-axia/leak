@@ -1,7 +1,13 @@
 body {
-    width: 900px;
-    margin: 20px auto;
+    margin: auto;
+    padding: 0 2em;
     font-size: 1.1em;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 1000px;
+    }
 }
 
 nav > a:not(:hover) {
@@ -31,5 +37,6 @@ ul {
 
 li {
     margin-left: -1.5em;
+    line-height: 1.7em;
     list-style: none;
 }

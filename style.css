@@ -1,13 +1,7 @@
 body {
     margin: auto;
     padding: 0 2em;
-    font-size: 1.1em;
-}
-
-@media only screen and (min-width: 768px) {
-    body {
-        width: 1000px;
-    }
+    font-size: 1em;
 }
 
 nav > a:not(:hover) {
@@ -23,7 +17,14 @@ a {
 }
 
 h2 {
-    margin-bottom: 0em;
+    margin: 0;
+    clear: both;
+}
+
+h2 + * {
+    margin: .5em;
+    margin-bottom: 1.5em;
+    overflow: auto;
 }
 
 .small {
@@ -31,8 +32,16 @@ h2 {
     font-size: 0.8em;
 }
 
+img.thumb {
+    margin: 0 1em 0 1em;
+    max-width: 140px;
+    max-height: 120px;
+    border-radius: .5em;
+    box-shadow: black 0 0 .5em;
+}
+
 ul {
-    margin-top: 0.5em;
+    margin: 0 auto;
 }
 
 li {
@@ -41,3 +50,15 @@ li {
     list-style: none;
     word-break: break-all;
 }
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        width: 1000px;
+    }
+    
+    img.thumb {
+        float: left;
+    }
+}
+

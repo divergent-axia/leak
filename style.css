@@ -23,27 +23,31 @@ h2 {
     margin: 0;
     clear: both;
     overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        #fff calc(100% - 15px),
+        transparent
+    );
 }
 
 h2::before {
     content: "♦";
     opacity: .5;
-    margin: 0 .3em;
+    margin-right: .3em;
     font-size: .8em;
 }
 
 h2:not(.bonus)::after {
     content: "";
     position: absolute;
-    opacity: .4;
-    margin: .7em 0; 
+    margin: .8em 0; 
     width: 1500px;
-    border-width: 2px;
-    border-style: solid;
+    border-width: 1px;
+    border-style: dashed;
     border-image: linear-gradient(
         to right,
         transparent,
-        white 3% 100%,
+        #777 2% 100%,
         transparent
     ) 1;
     top: 0;
@@ -51,6 +55,7 @@ h2:not(.bonus)::after {
 
 h2 + * {
     margin: .5em;
+    margin-left: 0;
     margin-bottom: 1em;
     overflow: auto;
 }
@@ -83,6 +88,19 @@ ul:not(.bullets) > li {
     margin-left: -1.5em;
     list-style: none;
     word-break: break-all;
+}
+
+hr {
+    margin: 2em auto;
+    width: 80%;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(
+        to right,
+        transparent,
+        #777 2% 98%,
+        transparent
+    ) 1;
 }
 
 @media only screen and (min-width: 768px) {

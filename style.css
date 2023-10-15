@@ -15,7 +15,7 @@ strong {
 }
 
 a {
-    color: #8f4;
+    color: #7d3;
 }
 
 h2 {
@@ -66,7 +66,7 @@ h2 + * {
 }
 
 img.thumb {
-    margin: .5em 1em 0 1.5em;
+    margin: .5em 1.2em 0 1.5em;
     height: 80px;
     border-radius: .5em;
     box-shadow: white 0 0 .3em;

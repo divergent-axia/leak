@@ -45,8 +45,11 @@ ul {
 }
 
 li {
-    margin-left: -1.5em;
     line-height: 1.8em;
+}
+
+ul:not(.bullets) > li {
+    margin-left: -1.5em;
     list-style: none;
     word-break: break-all;
 }

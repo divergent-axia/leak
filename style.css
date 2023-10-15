@@ -1,7 +1,9 @@
 body {
     margin: auto;
     padding: 0 2em;
+    background-color: black;
     font-size: 1em;
+    color: white;
 }
 
 nav > a:not(:hover) {
@@ -13,31 +15,56 @@ strong {
 }
 
 a {
-    color: royalblue;
+    color: #8f4;
 }
 
 h2 {
+    position: relative;
     margin: 0;
     clear: both;
+    overflow: hidden;
+}
+
+h2::before {
+    content: "♦";
+    opacity: .5;
+    margin: 0 .3em;
+    font-size: .8em;
+}
+
+h2:not(.bonus)::after {
+    content: "";
+    position: absolute;
+    opacity: .4;
+    margin: .7em 0; 
+    width: 1500px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(
+        to right,
+        transparent,
+        white 3% 100%,
+        transparent
+    ) 1;
+    top: 0;
 }
 
 h2 + * {
     margin: .5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     overflow: auto;
 }
 
 .small {
-    opacity: 0.4;
-    font-size: 0.8em;
+    opacity: .5;
+    font-size: .7em;
 }
 
 img.thumb {
-    margin: 0 1em 0 1em;
-    max-width: 140px;
-    max-height: 120px;
+    margin: .5em 1em 0 1.5em;
+    height: 80px;
     border-radius: .5em;
-    box-shadow: black 0 0 .5em;
+    box-shadow: white 0 0 .3em;
 }
 
 ul {
@@ -45,7 +72,11 @@ ul {
 }
 
 li {
-    line-height: 1.8em;
+    line-height: 1.7em;
+}
+
+ul.bullets {
+    font-size: 1.5em;
 }
 
 ul:not(.bullets) > li {

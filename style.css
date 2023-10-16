@@ -18,6 +18,11 @@ a {
     color: #7c3;
 }
 
+a.back {
+    margin: 0 .5em;
+    float: right;
+}
+
 h2 {
     position: relative;
     margin: 0;
@@ -25,7 +30,7 @@ h2 {
     overflow: hidden;
     mask-image: linear-gradient(
         to right,
-        #fff calc(100% - 15px),
+        #fff calc(100% - 10px),
         transparent
     );
 }

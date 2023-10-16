@@ -15,7 +15,7 @@ strong {
 }
 
 a {
-    color: #7d3;
+    color: #7c3;
 }
 
 h2 {
@@ -63,6 +63,18 @@ h2 + * {
 .small {
     opacity: .5;
     font-size: .7em;
+}
+
+.credentials {
+    display: inline-block;
+    padding: .3em;
+    border-radius: .5em;
+    opacity: 1;
+    background-color: #ffffff18;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .7em;
+    word-spacing: -.3em;
+    color: slategray;
 }
 
 img.thumb {

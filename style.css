@@ -131,3 +131,13 @@ hr {
     }
 }
 
+.lyrics {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.lyrics > strong {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 0 .5em;
+    border-radius: .5em;
+}

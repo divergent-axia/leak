@@ -134,6 +134,7 @@ hr {
 .lyrics {
     line-height: 1.5em;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .lyrics > strong {

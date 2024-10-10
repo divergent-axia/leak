@@ -134,6 +134,7 @@ hr {
 .lyrics {
     line-height: 1.5em;
     text-align: center;
+    text-wrap: wrap;
     font-size: 1.5em;
 }
 

@@ -143,3 +143,13 @@ hr {
     padding: 0 .5em;
     border-radius: .5em;
 }
+
+.youtube-link {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+}
+
+.youtube-link:hover {
+    text-decoration: underline;
+}

@@ -146,10 +146,14 @@ hr {
 
 .youtube-link {
     display: block;
-    margin: auto;
+    margin: 1em auto;
+    text-align: right;
+}
+
+.youtube-link > a {
     text-decoration: none;
 }
 
-.youtube-link:hover {
+.youtube-link > a:hover {
     text-decoration: underline;
 }
